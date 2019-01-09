@@ -1,4 +1,4 @@
 'use strict';
 
-let test="success!";
+let test="Penis!";
 alert(test);

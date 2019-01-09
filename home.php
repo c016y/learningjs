@@ -12,7 +12,7 @@
 		</p>
 	</div>
 	<h3>Javascript</h3>
-	<button onclick="<script src="/website/practice1.js"></script></button>
+	<script src="/website/practice1.js"></script>
 	
 </body>
 </html>

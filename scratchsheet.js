@@ -1,6 +1,6 @@
 'use strict';
-
-var cash = 10;
+// 01-08-2018
+/* var cash = 10;
 
 var milk = 2.75;
 var butter = 5;
@@ -15,4 +15,26 @@ alert("Your total is" + " " + "$" + products);
  	var cash = cash + 1;
  }
  
- alert("Your change is" + " " + "$" + (cash-products));
+ alert("Your change is" + " " + "$" + (cash-products)); */
+
+// 01-09-2018
+ var a;
+ alert(typeof a); //"undefined"
+
+ var a = "Hello, World!";
+ alert(typeof a); //"string"
+
+ var a = 42;
+ alert(typeof a); //"number"
+
+ var a = true;
+ alert(typeof a); //"boolean"
+
+ var a = null;
+ alert(typeof a); //"object"
+
+ var a = undefined;
+ alert(typeof a); //"undefined"
+
+ var a = { b: "c" };
+ alert(typeof a); //"object"

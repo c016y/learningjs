@@ -18,7 +18,7 @@ alert("Your total is" + " " + "$" + products);
  alert("Your change is" + " " + "$" + (cash-products)); */
 
 // 01-09-2018
- var a;
+ /* var a;
  alert(typeof a); //"undefined"
 
  var a = "Hello, World!";
@@ -38,3 +38,15 @@ alert("Your total is" + " " + "$" + products);
 
  var a = { b: "c" };
  alert(typeof a); //"object"
+*/
+
+ var myID = {
+	name: "Bobby",
+	age: 35,
+	sex: "Male",
+	address: {
+		street: 1234,
+		city: "Saginaw",
+		zipcode: 55555
+	}
+};

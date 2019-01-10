@@ -38,8 +38,8 @@ alert("Your total is" + " " + "$" + products);
 
  var a = { b: "c" };
  alert(typeof a); //"object"
-*/
 
+//this one worked
  var myID = {
 	name: "Bobby",
 	age: 35,
@@ -51,6 +51,7 @@ alert("Your total is" + " " + "$" + products);
 	}
 };
 
+//this code does not work for some reason, chrome console says sytax-error on creatEmployeeObject's closing curly
 function createEmployeeObject(firstName, gender, department) {
 	this.firstName = firstName,
 	this.gender = gender,
@@ -58,3 +59,4 @@ function createEmployeeObject(firstName, gender, department) {
 	};
 
 var emp1 = new createEmployeeObject("Katherine", "F", "Accounting");
+*/

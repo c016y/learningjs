@@ -50,3 +50,11 @@ alert("Your total is" + " " + "$" + products);
 		zipcode: 55555
 	}
 };
+
+function createEmployeeObject(firstName, gender, department) {
+	this.firstName = firstName,
+	this.gender = gender,
+	this.department = department,
+	};
+
+var emp1 = new createEmployeeObject("Katherine", "F", "Accounting");

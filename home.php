@@ -4,8 +4,7 @@
 	<title>Test</title>
 	<script src="/website/scratchsheet.js"></script>
 </head>
-<body>
-
+<body id="bgcolor">
 	<div id="title">
 		<p>
 			My name is <b> Colby</b> and I'm trying to get a <b>dev job</b> <br>

@@ -1,13 +1,15 @@
 // 01-14-2019
 //cleared page
 
-var greet = "hello";
+function changeButton() {
+	var greet = "hello";
 
-function fuckGreet() {
- greet = "Goodbye"
- return greet;
-};
+	function fuckGreet() {
+	 greet = "goodbye"
+	 return greet;
+	};
 
- fuckGreet();
+	 fuckGreet();
 
-alert(greet);
+	alert(greet);
+}

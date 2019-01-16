@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>Test</title>
-	<script src="/website/scratchsheet.js"></script>
+	<script src="/website/scratchsheeet.js"></script>
 </head>
-<body id="bgcolor">
+<body>
 	<div id="title">
 		<p>
 			My name is <b> Colby</b> and I'm trying to get a <b>dev job</b> <br>

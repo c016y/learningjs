@@ -45,11 +45,11 @@ function webButton() {
 	in:
 	*/
  
-	function foo(a) {
-		console.log(a); //4
-	}
-
-	foo(4);
+//	function foo(a) {
+//		console.log(a); //4
+//	}
+//
+//	foo(4);
 
 	/*
 	When executing "console.log(a)", the engine will make a RHS look-up to scope for the "source" of a,
@@ -59,13 +59,13 @@ function webButton() {
 	*/
 	//Quiz: If the engine and compiler where to talk, how would the convo go with this script:
 
-	function bar(a) {
+/*	function bar(a) {
 		var b = a;
 		return a + b;
 	}
 
 	var c = bar(2);
-
+*/
 	/*
 	Engine: RHS c
 	Scope: bar()
@@ -85,5 +85,23 @@ function webButton() {
 	I need to think abour how the compiler works to get this quiz right, will pick up where
 	I left off tomorrow.
 	*/ 
+
+//Stayed up late trying to make Rock, Paper, Scissors
+//Can't figure out how to validate win conditions, good task for tomorrow
+//	var userHand = prompt("Rock, Paper, or Scissors?"); //user input
+
+	var handPicker = Math.floor(Math.random() * 3 + 1 ); //npc input
+	var npcHand;
+
+		if (handPicker === 1) {
+			npcHand = "Rock";
+		} else if (handPicker === 2) {
+			npcHand = "Paper";
+		} else if (handPicker === 3) {
+			npcHand = "Scissors";
+		}
+
+
+	alert(npcHand);
 };
 

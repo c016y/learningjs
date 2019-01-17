@@ -2,7 +2,7 @@
 //cleared page
 
 function webButton() {
-
+	/*
 	function getRandomInt() {
 		var number1 = { value: Math.floor(Math.random() * 1000) };
 		var number2 = { value: Math.floor(Math.random() * 1000) };
@@ -16,7 +16,7 @@ function webButton() {
 	
  
  	// example of a closure (v confusing rn)
- 	/*
+ 	
 	function makeAdder(x) {
 
 		function add(y) {
@@ -30,5 +30,60 @@ function webButton() {
 
 	alert(plusTen(3));
 	*/
+
+	//01-16-2019
+	//reading "You don't know JS: scope & closures" by Kyle Simpson. 
+	/*
+	Learning about how when you create a variable, the JS engine utilizes the compiler by lexing the script
+	into tokens, which are then parsed into an AST.
+	The AST gets generated into machine code to actually allocate memory for the variable.
+	The compiler parses the code into what the engine will execute. While doing their processes, 
+	both the compiler and the engine utilize "scope" to check if memory has already been allocated
+	to that variable. When calling to the scope, the engine will use different "look-ups" to check the scope.
+	A LHS (or lefthand-side) is a call to the lefthand-side of the assignment operator. More specificly, 
+	it's a call for the "target" of the assignment. The RHS call is a reference to the "source" of the assignment.
+	in:
+	*/
+ 
+	function foo(a) {
+		console.log(a); //4
+	}
+
+	foo(4);
+
+	/*
+	When executing "console.log(a)", the engine will make a RHS look-up to scope for the "source" of a,
+	as well as a RHS look-up to the foo() function
+	When passing the 4 paramenter to the foo() function, you are assiging a value to a, when assigning a
+	value to a, a LHS look-up is performed.
+	*/
+	//Quiz: If the engine and compiler where to talk, how would the convo go with this script:
+
+	function bar(a) {
+		var b = a;
+		return a + b;
+	}
+
+	var c = bar(2);
+
+	/*
+	Engine: RHS c
+	Scope: bar()
+	Engine: RHS bar()
+	Scope: "this" function
+	Engine: Executing "that" function
+	Engine: RHS a
+	Scope: parameter to bar()
+	Engine: Assigning 2 to a
+	Engine: RHS b
+	Scope: a (2)
+	Engine: RHS return
+	Scope: a (2) + b (2)
+	Engine: LHS c
+	Scope: a + b (4)
+
+	I need to think abour how the compiler works to get this quiz right, will pick up where
+	I left off tomorrow.
+	*/ 
 };
 

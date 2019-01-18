@@ -122,3 +122,7 @@ function webButton() {
 	alert("Thanks for clicking :]");
 
 };
+
+function contactButton() {
+	alert("c016yinbox@gmail.com");
+};

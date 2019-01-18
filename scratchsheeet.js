@@ -82,14 +82,15 @@ function webButton() {
 	Engine: LHS c
 	Scope: a + b (4)
 
-	I need to think abour how the compiler works to get this quiz right, will pick up where
+	I need to think abour how the compiler works to get the quiz right, will pick up where
 	I left off tomorrow.
 	*/ 
 
 //Stayed up late trying to make Rock, Paper, Scissors
 //Can't figure out how to validate win conditions, good task for tomorrow
-//	var userHand = prompt("Rock, Paper, or Scissors?"); //user input
 
+//	var userHand = prompt("Rock, Paper, or Scissors?"); //user input
+/*
 	var handPicker = Math.floor(Math.random() * 3 + 1 ); //npc input
 	var npcHand;
 
@@ -103,5 +104,21 @@ function webButton() {
 
 
 	alert(npcHand);
-};
+*/
 
+// 01-17-2019
+//late night at work, no scripting tonight :[ 
+//so far i've re-read yesterdays topic of how the JS engine compiles and executes scripts.
+//also want to get back to the rock, paper, scissors game eventually.
+//I don't want to not write some JS, so here's something
+
+	var count = 0;
+
+	while (count <= 5) {
+		alert(count);
+		count++;
+	};
+
+	alert("Thanks for clicking :]");
+
+};

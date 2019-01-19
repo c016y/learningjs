@@ -111,7 +111,7 @@ function webButton() {
 //so far i've re-read yesterdays topic of how the JS engine compiles and executes scripts.
 //also want to get back to the rock, paper, scissors game eventually.
 //I don't want to not write some JS, so here's something
-
+/*
 	var count = 0;
 
 	while (count <= 5) {
@@ -120,7 +120,49 @@ function webButton() {
 	};
 
 	alert("Thanks for clicking :]");
+	*/
 
+//01/18/2019
+//building on yesterday...
+
+//This is all trash, idk what im doing
+/*
+	var count = 1;
+	var result = "";
+	var userInput = prompt("Pick a number 1 - 10");
+	var x = userInput;
+
+	while (count <= 10) {
+		var result = result + count;
+		count++;
+	};
+
+	 function selector(x) {
+		if (x <= 1 || x >= 10) {
+			x--;
+			var space = " ";
+			alert( x + '^');
+		} else if (x > 1 || x < 10) {
+			alert("It must be a number between 1 and 10.");
+		}
+	};
+
+	selector();
+*/
+//something easier
+	
+	function time() {
+		var d = new Date();
+  		var n = d.getHours();
+  		
+  		console.log(n);
+
+  		if (n < 12) {
+  			alert("Good Morning")
+  		} else { alert("Good Night") }
+  	};
+
+  	time();
 };
 
 function contactButton() {

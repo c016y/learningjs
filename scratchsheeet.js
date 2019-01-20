@@ -150,7 +150,7 @@ function webButton() {
 	selector();
 */
 //something easier
-	
+/*	
 	function time() {
 		var d = new Date();
   		var n = d.getHours();
@@ -163,6 +163,76 @@ function webButton() {
   	};
 
   	time();
+*/
+// 01-19-2019
+// rock paper scissors
+
+	alert("*broken* Rock, Paper, Scissors!")
+	
+	var userHand = prompt("Rock, Paper, or Scissors?"); //user input
+	var handPicker = Math.floor(Math.random() * 3 + 1 ); //npc input
+	var stopWin = false;
+
+		//user value assigner
+		if (userHand == "Rock") {
+			var userScore = 1;
+		} else if (userHand == "Paper") {
+			var userScore = 2;
+		} else if (userHand == "Scissors") {
+			var userScore = 3;
+		};
+
+		//npc value assigner
+		if (handPicker === 1) {
+			npcHand = "Rock";
+			var npcScore = 1;
+		} else if (handPicker === 2) {
+			npcHand = "Paper";
+			var npcScore = 2;
+		} else if (handPicker === 3) {
+			npcHand = "Scissors";
+			npcScore = 3;
+		};
+
+		//win validation
+		if (userScore == npcScore) { //tie
+			var win = undefined;
+		} else if (userScore + npcScore === 3 && userScore > npcScore) { //rock & paper : win
+			var win = true;
+		} else if (userScore + npcScore === 3 && userScore < npcScore) { //rock & paper : lose
+			var win = false;
+		} else if (userScore + npcScore === 4 && userScore < npcScore) { //rock & scissors : win
+			var win = true;
+		} else if (userScore + npcScore === 4 && userScore > npcScore) { //rock & scissors : lose
+			var win = false;
+		} else if (userScore + npcScore === 5 && userScore > npcScore) { //paper & scissors : win
+			var win = true;
+		} else if (userScore + npcScore === 5 && userScore < npcScore) { //paper & scissors : lose
+			var win = false;
+		} else if (userScore != "Rock" || userScore != "Paper" || userScore != "Scissors") {
+			var stopWin = true;
+			alert("Invalid Input");
+		};
+
+		//announce win
+		if (win === undefined) {
+			stateWin = "Tie!";
+		} else if (win = true) {
+			stateWin = "You Win!";
+		} else if (win = false) {
+			stateWin = "You Lose!";
+		};
+
+		if (stopWin === false) {
+			alert("You:" + " " + userHand + "      " + stateWin + "      " + "NPC:" + " " + npcHand);
+		} else {
+			alert("Try Again!")
+		}
+
+//okay so, not the cleanest rock paper scissors game out there, but I almost managed to build it.
+//user cannot lose which means it doesnt work, but I'll have to fix in the future
+//Need to look into if, if else, and else some more and look into more than one condition within statements.
+
 };
 
 function contactButton() {

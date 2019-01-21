@@ -38,27 +38,24 @@ function webButton() {
 			npcScore = 3;
 		};
 
-		alert(userScore);
-		alert(npcScore);
-
 		//win validation
 		if (userScore == npcScore) { //tie
-			var win = undefined;
+			win = undefined;
 
 		} else if (userScore + npcScore === 3) { //rock & paper
-			if (userScore > npcScore) {
-				var win = true;
-			} else { var win = false; }
+			if (userScore < npcScore) {
+				win = true;
+			} else (userScore > npcScore){  win = false; }
 
 		else if (userScore + npcScore === 4) { //rock & scissors
 			if (userScore < npcScore) {
-				var win = true;
-			} else { var win = false; }
+				win = true;
+			} else {  win = false; }
 
 		else if (userScore + npcScore === 5) { //paper & scissors
 			if (userScore > npcScore) {
-				var win = true;
-			} else { var win = false; }
+				 win = true;
+			} else {  win = false; }
 
 		} else if (userScore != "Rock" || userScore != "Paper" || userScore != "Scissors") {
 			var stopWin = true;
@@ -81,6 +78,9 @@ function webButton() {
 		} else {
 			alert("Try Again!")
 		}
+
+//Its way too late, lets leave it at this, more tomorrow
+
 };
 
 function contactButton() {

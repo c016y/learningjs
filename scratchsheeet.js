@@ -2,170 +2,10 @@
 //cleared page
 
 function webButton() {
-	/*
-	function getRandomInt() {
-		var number1 = { value: Math.floor(Math.random() * 1000) };
-		var number2 = { value: Math.floor(Math.random() * 1000) };
-		var number3 = { value: Math.floor(Math.random() * 1000) };
 
-		var rgb = (number1.value + ', ' + number2.value + ', ' + number3.value);
-
-		alert("Here's 3 random numbers:" + ' ' + rgb)
-	};
-	getRandomInt();
-	
- 
- 	// example of a closure (v confusing rn)
- 	
-	function makeAdder(x) {
-
-		function add(y) {
-			return y + x;
-		};
-		return add;
-	}
-
-	var plusOne = makeAdder(1);
-	var plusTen = makeAdder(10);
-
-	alert(plusTen(3));
-	*/
-
-	//01-16-2019
-	//reading "You don't know JS: scope & closures" by Kyle Simpson. 
-	/*
-	Learning about how when you create a variable, the JS engine utilizes the compiler by lexing the script
-	into tokens, which are then parsed into an AST.
-	The AST gets generated into machine code to actually allocate memory for the variable.
-	The compiler parses the code into what the engine will execute. While doing their processes, 
-	both the compiler and the engine utilize "scope" to check if memory has already been allocated
-	to that variable. When calling to the scope, the engine will use different "look-ups" to check the scope.
-	A LHS (or lefthand-side) is a call to the lefthand-side of the assignment operator. More specificly, 
-	it's a call for the "target" of the assignment. The RHS call is a reference to the "source" of the assignment.
-	in:
-	*/
- 
-//	function foo(a) {
-//		console.log(a); //4
-//	}
-//
-//	foo(4);
-
-	/*
-	When executing "console.log(a)", the engine will make a RHS look-up to scope for the "source" of a,
-	as well as a RHS look-up to the foo() function
-	When passing the 4 paramenter to the foo() function, you are assiging a value to a, when assigning a
-	value to a, a LHS look-up is performed.
-	*/
-	//Quiz: If the engine and compiler where to talk, how would the convo go with this script:
-
-/*	function bar(a) {
-		var b = a;
-		return a + b;
-	}
-
-	var c = bar(2);
-*/
-	/*
-	Engine: RHS c
-	Scope: bar()
-	Engine: RHS bar()
-	Scope: "this" function
-	Engine: Executing "that" function
-	Engine: RHS a
-	Scope: parameter to bar()
-	Engine: Assigning 2 to a
-	Engine: RHS b
-	Scope: a (2)
-	Engine: RHS return
-	Scope: a (2) + b (2)
-	Engine: LHS c
-	Scope: a + b (4)
-
-	I need to think abour how the compiler works to get the quiz right, will pick up where
-	I left off tomorrow.
-	*/ 
-
-//Stayed up late trying to make Rock, Paper, Scissors
-//Can't figure out how to validate win conditions, good task for tomorrow
-
-//	var userHand = prompt("Rock, Paper, or Scissors?"); //user input
-/*
-	var handPicker = Math.floor(Math.random() * 3 + 1 ); //npc input
-	var npcHand;
-
-		if (handPicker === 1) {
-			npcHand = "Rock";
-		} else if (handPicker === 2) {
-			npcHand = "Paper";
-		} else if (handPicker === 3) {
-			npcHand = "Scissors";
-		}
-
-
-	alert(npcHand);
-*/
-
-// 01-17-2019
-//late night at work, no scripting tonight :[ 
-//so far i've re-read yesterdays topic of how the JS engine compiles and executes scripts.
-//also want to get back to the rock, paper, scissors game eventually.
-//I don't want to not write some JS, so here's something
-/*
-	var count = 0;
-
-	while (count <= 5) {
-		alert(count);
-		count++;
-	};
-
-	alert("Thanks for clicking :]");
-	*/
-
-//01/18/2019
-//building on yesterday...
-
-//This is all trash, idk what im doing
-/*
-	var count = 1;
-	var result = "";
-	var userInput = prompt("Pick a number 1 - 10");
-	var x = userInput;
-
-	while (count <= 10) {
-		var result = result + count;
-		count++;
-	};
-
-	 function selector(x) {
-		if (x <= 1 || x >= 10) {
-			x--;
-			var space = " ";
-			alert( x + '^');
-		} else if (x > 1 || x < 10) {
-			alert("It must be a number between 1 and 10.");
-		}
-	};
-
-	selector();
-*/
-//something easier
-/*	
-	function time() {
-		var d = new Date();
-  		var n = d.getHours();
-  		
-  		console.log(n);
-
-  		if (n < 12) {
-  			alert("Good Morning")
-  		} else { alert("Good Night") }
-  	};
-
-  	time();
-*/
-// 01-19-2019
-// rock paper scissors
+//01-20-2019
+//cleared page
+//need to fix rock paper scissors
 
 	alert("*broken* Rock, Paper, Scissors!")
 	
@@ -176,8 +16,10 @@ function webButton() {
 		//user value assigner
 		if (userHand == "Rock") {
 			var userScore = 1;
+
 		} else if (userHand == "Paper") {
 			var userScore = 2;
+
 		} else if (userHand == "Scissors") {
 			var userScore = 3;
 		};
@@ -186,29 +28,38 @@ function webButton() {
 		if (handPicker === 1) {
 			npcHand = "Rock";
 			var npcScore = 1;
+
 		} else if (handPicker === 2) {
 			npcHand = "Paper";
 			var npcScore = 2;
+
 		} else if (handPicker === 3) {
 			npcHand = "Scissors";
 			npcScore = 3;
 		};
 
+		alert(userScore);
+		alert(npcScore);
+
 		//win validation
 		if (userScore == npcScore) { //tie
 			var win = undefined;
-		} else if (userScore + npcScore === 3 && userScore > npcScore) { //rock & paper : win
-			var win = true;
-		} else if (userScore + npcScore === 3 && userScore < npcScore) { //rock & paper : lose
-			var win = false;
-		} else if (userScore + npcScore === 4 && userScore < npcScore) { //rock & scissors : win
-			var win = true;
-		} else if (userScore + npcScore === 4 && userScore > npcScore) { //rock & scissors : lose
-			var win = false;
-		} else if (userScore + npcScore === 5 && userScore > npcScore) { //paper & scissors : win
-			var win = true;
-		} else if (userScore + npcScore === 5 && userScore < npcScore) { //paper & scissors : lose
-			var win = false;
+
+		} else if (userScore + npcScore === 3) { //rock & paper
+			if (userScore > npcScore) {
+				var win = true;
+			} else { var win = false; }
+
+		else if (userScore + npcScore === 4) { //rock & scissors
+			if (userScore < npcScore) {
+				var win = true;
+			} else { var win = false; }
+
+		else if (userScore + npcScore === 5) { //paper & scissors
+			if (userScore > npcScore) {
+				var win = true;
+			} else { var win = false; }
+
 		} else if (userScore != "Rock" || userScore != "Paper" || userScore != "Scissors") {
 			var stopWin = true;
 			alert("Invalid Input");
@@ -217,8 +68,10 @@ function webButton() {
 		//announce win
 		if (win === undefined) {
 			stateWin = "Tie!";
+
 		} else if (win = true) {
 			stateWin = "You Win!";
+
 		} else if (win = false) {
 			stateWin = "You Lose!";
 		};
@@ -228,11 +81,6 @@ function webButton() {
 		} else {
 			alert("Try Again!")
 		}
-
-//okay so, not the cleanest rock paper scissors game out there, but I almost managed to build it.
-//user cannot lose which means it doesnt work, but I'll have to fix in the future
-//Need to look into if, if else, and else some more and look into more than one condition within statements.
-
 };
 
 function contactButton() {

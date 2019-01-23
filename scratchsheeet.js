@@ -1,19 +1,15 @@
-//01-15-2019
-//cleared page
-
-function webButton() {
-
 //01-20-2019
 //cleared page
 //need to fix rock paper scissors
 
+	function webButton() {
+/*
 	alert("*broken* Rock, Paper, Scissors!")
 	
 	var userHand = prompt("Rock, Paper, or Scissors?"); //user input
 	var handPicker = Math.floor(Math.random() * 3 + 1 ); //npc input
 	var stopWin = false;
 
-		//user value assigner
 		if (userHand == "Rock") {
 			var userScore = 1;
 
@@ -45,17 +41,21 @@ function webButton() {
 		} else if (userScore + npcScore === 3) { //rock & paper
 			if (userScore < npcScore) {
 				win = true;
-			} else (userScore > npcScore){  win = false; }
+			} else { 
+				win = false; 
 
-		else if (userScore + npcScore === 4) { //rock & scissors
+		} else if (userScore + npcScore === 4) { //rock & scissors
 			if (userScore < npcScore) {
 				win = true;
-			} else {  win = false; }
+			} else {
+				win = false;
 
-		else if (userScore + npcScore === 5) { //paper & scissors
+		} else if (userScore + npcScore === 5) { //paper & scissors
 			if (userScore > npcScore) {
 				 win = true;
-			} else {  win = false; }
+			} else {  
+				win = false; 
+			}
 
 		} else if (userScore != "Rock" || userScore != "Paper" || userScore != "Scissors") {
 			var stopWin = true;
@@ -80,6 +80,32 @@ function webButton() {
 		}
 
 //Its way too late, lets leave it at this, more tomorrow
+*/
+
+//01-21-2019
+//Will return tp rpc later. Want to explore scopes a bit.
+//I've already spent an hour trying to fix the WAMP server im running >:[
+//Very distracted night :( Didn't do much other than mess with the rpc
+
+//01-22-2019
+//Exploring scopes like I meant to last night
+//Started working on a "payoff calculator", will upload to Github
+//The html part is nearly done
+//need to figure out how to properly pull data from HTML forms
+
+var x = {
+	foo: 1,
+	bar: 2,
+	baz: 3
+};
+
+function changeX() {
+	x.foo++
+}
+
+changeX();
+alert(x.foo);
+
 
 };
 

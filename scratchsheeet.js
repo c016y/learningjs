@@ -93,22 +93,24 @@
 //The html part is nearly done
 //need to figure out how to properly pull data from HTML forms
 
-var x = {
-	foo: 1,
-	bar: 2,
-	baz: 3
+	var x = {
+		foo: 1,
+		bar: 2,
+		baz: 3
+	};
+
+	function changeX() {
+		x.foo++
+	}
+
+	changeX();
+	alert(x.foo);
+
+//Started doing the math needed for the Pay-Off calculator, still can't pull the data from the HTML into
+// javascript, will research tomorrow.
+
 };
 
-function changeX() {
-	x.foo++
-}
-
-changeX();
-alert(x.foo);
-
-
-};
-
-function contactButton() {
-	alert("c016yinbox@gmail.com");
-};
+	function contactButton() {
+		alert("c016yinbox@gmail.com");
+	};

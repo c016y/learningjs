@@ -41,13 +41,11 @@
 			<h3>Pay-Off Calculator</h3>
 			Let's get some more info about your loan.
 			<form>
-				<p>
 					I currently owe <input type="text" id="loan_amount"> on my loan, <br> 
 					with an interest rate of <input type="text" id="interest_rate">, and <br>
 					I pay <input type="text" id="payment_amount"> every month towards this loan. <br>
-				</p>
+					<input type="submit" onclick="test()" value="Calculate">
 			</form>
-			<button onclick="test()">Calculate</button>
 		</div>
 
 	</div>

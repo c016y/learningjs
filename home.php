@@ -3,7 +3,6 @@
 <head>
 	<title>Test</title>
 	<script src="/website/scratchsheeet.js"></script>
-	<script src="/website/payoffcalculator.js"></script>
 </head>
 
 <style type="text/css">
@@ -40,12 +39,13 @@
 		<div id="payoffCalc">
 			<h3>Pay-Off Calculator</h3>
 			Let's get some more info about your loan.
-			<form>
-					I currently owe <input type="text" id="loan_amount"> on my loan, <br> 
-					with an interest rate of <input type="text" id="interest_rate">, and <br>
-					I pay <input type="text" id="payment_amount"> every month towards this loan. <br>
-					<input type="submit" onclick="test()" value="Calculate">
+			<form id="payoffForm">
+					I currently owe <input type="text" name="loan_amount" id="loan_amount"> on my loan, <br> 
+					with an interest rate of <input type="text" name="interest_rate" id="interest_rate">, and <br>
+					I pay <input type="text" name="payment_amount" id="payment_amount"> every month towards this loan. <br>
+					<input type="submit" onclick="formData()" value="Calculate">
 			</form>
+			<script src="/website/payoffcalculator.js"></script>
 		</div>
 
 	</div>

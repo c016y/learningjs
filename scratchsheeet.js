@@ -99,15 +99,34 @@
 		baz: 3
 	};
 
-	function changeX() {
-		x.foo++
+	var y = {
+		foo: 10,
+		bar: 20,
+		baz: 30
 	}
 
-	changeX();
-	alert(x.foo);
+	function addZ() {
+		z = 0;
+		function math() {
+		z = x.foo * y.bar
+	}
+	math();
+	}
+
+	addZ();
+	alert(z);
 
 //Started doing the math needed for the Pay-Off calculator, still can't pull the data from the HTML into
 // javascript, will research tomorrow.
+
+//01-23-2019 : in reference to payoffcalculator.js
+//Found out what was wrong with last nights script. I was referencing the .js file before the HTML could assign
+//user input (doh).
+//documentGetById() will not pull data from home.php unless the js is in a function (?)
+//Now i've found out I need to explicitly coerce a string to an interger because the HTML forms output strings
+//found the parseFloat() and parseInt() functions that will do that ^^^
+//Had to removed remainder because the remainder variable because it sometimes rounds numbers, which is no good.
+
 
 };
 

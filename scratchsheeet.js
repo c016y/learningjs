@@ -105,7 +105,7 @@
 		baz: 30
 	}
 
-	function addZ() {
+	function changeX() {
 		z = 0;
 		function math() {
 		z = x.foo * y.bar
@@ -113,7 +113,7 @@
 	math();
 	}
 
-	addZ();
+	changeX();
 	alert(z);
 
 //Started doing the math needed for the Pay-Off calculator, still can't pull the data from the HTML into
@@ -127,6 +127,11 @@
 //found the parseFloat() and parseInt() functions that will do that ^^^
 //Had to removed remainder because the remainder variable because it sometimes rounds numbers, which is no good.
 
+//01-24-2019
+//Cleaned up some stuff from yesterday
+//spent most of today creating a valid input checker
+//Almost works but i'm having trouble actually making it spit out the right thing
+//will fix tomorrow
 
 };
 

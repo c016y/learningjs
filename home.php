@@ -40,9 +40,9 @@
 			<h3>Pay-Off Calculator</h3>
 			Let's get some more info about your loan.
 			<form id="payoffForm">
-					I currently owe <input type="text" name="loan_amount" id="loan_amount"> on my loan, <br> 
-					with an interest rate of <input type="text" name="interest_rate" id="interest_rate">, and <br>
-					I pay <input type="text" name="payment_amount" id="payment_amount"> every month towards this loan. <br>
+					I currently owe $<input type="text" name="loan_amount" id="loan_amount"> on my loan, <br> 
+					with an interest rate of <input type="text" name="interest_rate" id="interest_rate">%, and <br>
+					I pay $<input type="text" name="payment_amount" id="payment_amount"> every month towards this loan. <br>
 					<input type="submit" onclick="formData()" value="Calculate">
 			</form>
 			<script src="/website/payoffcalculator.js"></script>

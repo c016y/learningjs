@@ -16,6 +16,11 @@
 		background.color: black;
 	}
 
+	#payoffCalc {
+		border-style: solid;
+		margin-bottom: 10;
+	}
+
 </style>
 <body>
 
@@ -28,7 +33,7 @@
 		<p>I am currently learning Javascript. You can find what I've written on <b><a href="https://github.com/c016y">GitHub</a></b></p>
 
 		<button onclick="webButton()">Run my practice Javascript!</button> 
-		<br>
+		<br><br>
 		<button onclick="contactButton()">Contact Me</button>
 	</div>
 
@@ -42,8 +47,8 @@
 			<form id="payoffForm">
 					I currently owe $<input type="text" name="loan_amount" id="loan_amount"> on my loan, <br> 
 					with an interest rate of <input type="text" name="interest_rate" id="interest_rate">%, and <br>
-					I pay $<input type="text" name="payment_amount" id="payment_amount"> every month towards this loan. <br>
-					<input type="submit" onclick="formData()" value="Calculate">
+					I pay $<input type="text" name="payment_amount" id="payment_amount"> every month towards this loan. <br><br>
+					<input style="margin-bottom: 20px" type="submit" onclick="formData()" value="Calculate">
 			</form>
 			<script src="/website/payoffcalculator.js"></script>
 		</div>

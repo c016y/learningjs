@@ -93,6 +93,7 @@
 //The html part is nearly done
 //need to figure out how to properly pull data from HTML forms
 
+/*
 	var x = {
 		foo: 1,
 		bar: 2,
@@ -115,6 +116,7 @@
 
 	changeX();
 	alert(z);
+*/
 
 //Started doing the math needed for the Pay-Off calculator, still can't pull the data from the HTML into
 // javascript, will research tomorrow.
@@ -132,6 +134,35 @@
 //spent most of today creating a valid input checker
 //Almost works but i'm having trouble actually making it spit out the right thing
 //will fix tomorrow
+
+//01-26-2018
+//need to test some things
+//I finished the Pay-Off Calculator! Next I think I will redo the Rock, Paper, Scissors game to hopefully cleanup
+//what I've already written and get it working properly, maybe just start over
+//Some other project ideas:
+/*
+	Tic-Tac Toe
+	Random background color-changer
+	Clicker counter game
+	Start getting into RSS feed / API / Web-shit
+	Dice
+	Deck of Cards / Black Jack?
+*/
+//good short day tonight, its the next day so I'll commit later too
+
+var bar = 1;
+var checker = false;
+
+function changeBar() {
+	bar ++
+	checker = true;
+}
+
+changeBar();
+
+if (checker == true) {
+	alert(bar);
+}
 
 };
 

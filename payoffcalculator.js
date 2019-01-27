@@ -5,8 +5,8 @@
 	@01-26-2019
 */
 
-function formData() { // user input from HTML form
-	
+function calcLoan() { // user input from HTML form
+
 	let loanAmount_input = parseFloat(document.getElementById("loan_amount").value);
 	let interestRate_input = parseFloat(document.getElementById("interest_rate").value) / 100;
 	let paymentAmount_input = parseFloat(document.getElementById("payment_amount").value);
@@ -24,7 +24,7 @@ function formData() { // user input from HTML form
 //Error Check
 	function errorDetector() {
 
-			if (!isNaN(loanAmount_input) && loanAmount_input > 0 ) {
+			if (!isNaN(loanAmount_input) && loanAmount_input > 0 ) { //if loanAmount_input = number
 				errorFlagger.la = true;
 			} else {
 				errorFlagger.la = false;
@@ -42,7 +42,7 @@ function formData() { // user input from HTML form
 				errorFlagger.pa = false;
 			};
 
-			if ((errorFlagger.la == true) && (errorFlagger.ir = true) && (errorFlagger.pa = true)) { //if all conditions are true
+			if ((errorFlagger.la == true) && (errorFlagger.ir == true) && (errorFlagger.pa == true)) { //if all conditions are true
 				greenLight = true;
 			}; 
 	};

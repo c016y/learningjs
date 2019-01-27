@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test</title>
+	<title>home</title>
 	<script src="/website/scratchsheeet.js"></script>
 </head>
 
@@ -19,6 +19,19 @@
 	#payoffCalc {
 		border-style: solid;
 		margin-bottom: 10;
+	}
+
+	.tictacToe {
+		margin: 0 auto;
+		width: 150px;
+		background:;
+	}
+
+	
+
+	.inputBox {
+		border: none;
+		padding: 20px;
 	}
 
 </style>
@@ -48,13 +61,56 @@
 					I currently owe $<input type="text" name="loan_amount" id="loan_amount"> on my loan, <br> 
 					with an interest rate of <input type="text" name="interest_rate" id="interest_rate">%, and <br>
 					I pay $<input type="text" name="payment_amount" id="payment_amount"> every month towards this loan. <br><br>
-					<input style="margin-bottom: 20px" type="submit" onclick="formData()" value="Calculate">
+					<input style="margin-bottom: 20px" type="submit" onclick="calcLoan()" value="Calculate">
 			</form>
 			<script src="/website/payoffcalculator.js"></script>
 		</div>
 
-	</div>
+		<br>
 
+		<div class="tictacToe">
+
+			<h3>Tic-Tac Toe</h3>
+					<table>
+						<tr class="rowOne">
+							<th style="border-right: 3px solid ; border-bottom: 3px solid">
+								<input class="inputBox" type=button name="topLeft" id="topLeft">
+							</th>
+							<th style="border-left: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
+								<input class="inputBox" type=button name="top" id="top">
+							</th>
+							<th style="border-left: 3px solid ; border-bottom: 3px solid">
+								<input class="inputBox" type=button name="topRight" id="topRight">
+							</th>
+						</tr>
+
+						<tr>
+							<th style="border-top: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
+								<input class="inputBox" type=button name="left" id="left">
+							</th>
+							<th style="border: 3px solid">
+								<input class="inputBox" type=button name="center" id="center">
+							</th>
+							<th style="border-top: 3px solid ; border-left: 3px solid ; border-bottom: 3px solid">
+								<input class="inputBox" type=button name="right" id="right">
+							</th>
+						</tr>
+
+						<tr>
+							<th style="border-right: 3px solid ; border-top: 3px solid">
+								<input class="inputBox" type=button name="bottomLeft" id="bottomLeft">
+							</th>
+							<th style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">
+								<input class="inputBox" type=button name="bottom" id="bottom">
+							</th>
+							<th style="border-left: 3px solid ; border-top: 3px solid">
+								<input class="inputBox" type=button name="bottomRight" id="bottomRight">
+							</th>
+						</tr>
+					</table>
+		</div>
+
+	</div>
 	
 </body>
 </html>

@@ -12,10 +12,6 @@
 		text-align: center;
 	}
 
-	.projects {
-		background.color: black;
-	}
-
 	#payoffCalc {
 		border-style: solid;
 		margin-bottom: 10;
@@ -27,16 +23,18 @@
 		background:;
 	}
 
-	
-
 	.inputBox {
 		border: none;
-		padding: 20px;
+		padding: 30px;
+		font-weight: bold;
+		font-size: 16pt;
+		background-color: white;
 	}
 
 </style>
 <body>
 
+<!-- Info/Home -->
 	<header class="header">
 		<h3> My name is <b> Colby</b> and I'm trying to get a <b>dev job</b> </h3>
 		<h4> This is my website to show you what I know </h4>
@@ -53,7 +51,7 @@
 	<div id="examples" class="projects">
 		<h2>Projects</h2>
 
-		<!-- Pay-Off Calculator-->
+<!-- Pay-Off Calculator-->
 		<div id="payoffCalc">
 			<h3>Pay-Off Calculator</h3>
 			Let's get some more info about your loan.
@@ -67,47 +65,48 @@
 		</div>
 
 		<br>
-
+<!-- Tic-Tac-Toe -->
 		<div class="tictacToe">
 
 			<h3>Tic-Tac Toe</h3>
 					<table>
 						<tr class="rowOne">
 							<th style="border-right: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="topLeft" id="topLeft">
+								<input class="inputBox" type=button name="topLeft" id="topLeft" onclick="topLeftB()">
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="top" id="top">
+								<input class="inputBox" type=button name="top" id="top" onclick="topB()">
 							</th>
 							<th style="border-left: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="topRight" id="topRight">
+								<input class="inputBox" type=button name="topRight" id="topRight" onclick="topRightB()">
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-top: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="left" id="left">
+								<input class="inputBox" type=button name="left" id="left" onclick="leftB()">
 							</th>
 							<th style="border: 3px solid">
-								<input class="inputBox" type=button name="center" id="center">
+								<input class="inputBox" type=button name="center" id="center" onclick="centerB()">
 							</th>
 							<th style="border-top: 3px solid ; border-left: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="right" id="right">
+								<input class="inputBox" type=button name="right" id="right" onclick="rightB()">
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-right: 3px solid ; border-top: 3px solid">
-								<input class="inputBox" type=button name="bottomLeft" id="bottomLeft">
+								<input class="inputBox" type=button name="bottomLeft" id="bottomLeft" onclick="bottomLeftB()">
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">
-								<input class="inputBox" type=button name="bottom" id="bottom">
+								<input class="inputBox" type=button name="bottom" id="bottom" onclick="bottomB()">
 							</th>
 							<th style="border-left: 3px solid ; border-top: 3px solid">
-								<input class="inputBox" type=button name="bottomRight" id="bottomRight">
+								<input class="inputBox" type=button name="bottomRight" id="bottomRight" onclick="bottomRightB()">
 							</th>
 						</tr>
 					</table>
+					<script src="/website/tictacToe.js"></script>
 		</div>
 
 	</div>

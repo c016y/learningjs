@@ -72,37 +72,37 @@
 					<table>
 						<tr class="rowOne">
 							<th style="border-right: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="topLeft" id="topLeft" onclick="topLeftB()">
+								<button id="topLeft" onclick="gameButtons()">1</button>
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="top" id="top" onclick="topB()">
+								<button id="top" onclick="gameButtons()">2</button>
 							</th>
 							<th style="border-left: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="topRight" id="topRight" onclick="topRightB()">
+								<button id="topRight" onclick="gameButtons()">3</button>
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-top: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="left" id="left" onclick="leftB()">
+								<button id="left" onclick="gameButtons()">4</button>
 							</th>
 							<th style="border: 3px solid">
-								<input class="inputBox" type=button name="center" id="center" onclick="centerB()">
+								<button id="center" onclick="gameButtons()">5</button>
 							</th>
 							<th style="border-top: 3px solid ; border-left: 3px solid ; border-bottom: 3px solid">
-								<input class="inputBox" type=button name="right" id="right" onclick="rightB()">
+								<button id="right" onclick="gameButtons()">6</button>
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-right: 3px solid ; border-top: 3px solid">
-								<input class="inputBox" type=button name="bottomLeft" id="bottomLeft" onclick="bottomLeftB()">
+								<button id="bottomLeft" onclick="gameButtons()">7</button>
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">
-								<input class="inputBox" type=button name="bottom" id="bottom" onclick="bottomB()">
+								<button id="bottom" onclick="gameButtons()">8</button>
 							</th>
 							<th style="border-left: 3px solid ; border-top: 3px solid">
-								<input class="inputBox" type=button name="bottomRight" id="bottomRight" onclick="bottomRightB()">
+								<button id="bottomRight" onclick="gameButtons()">9</button>
 							</th>
 						</tr>
 					</table>

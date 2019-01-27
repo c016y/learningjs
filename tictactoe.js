@@ -1,59 +1,97 @@
 "use strict";
 
-var player = "X";
-var turn = 0;
+var numOfMoves = 0;
+var whosTurn = 0;
 
-//Buttons
+switch(whosTurn) {
+	case 0:
+	console.log("It's Users Turn"),
+	whosTurn = 1
+	break;
+
+	case 1:
+	console.log("It's NPC's Turn"),
+	whosTurn = 0
+	break;
+}
+
+var buttonClicked = {
+	topLeft: false,
+	top: false,
+	topRight: false,
+	left: false,
+	center: false,
+	right: false,
+	bottomLeft: false,
+	bottom: false,
+	bottomRight: false
+}
+
+function gameButtons() {
+	document.getElementById("topLeft").addEventListener("click", topLeftB);
+	document.getElementById("top").addEventListener("click", topB);
+	document.getElementById("topRight").addEventListener("click", topRightB);
+	document.getElementById("left").addEventListener("click", leftB);
+	document.getElementById("center").addEventListener("click", centerB);
+	document.getElementById("right").addEventListener("click", rightB);
+	document.getElementById("bottomLeft").addEventListener("click", bottomLeftB);
+	document.getElementById("bottom").addEventListener("click", bottomB);
+	document.getElementById("bottomRight").addEventListener("click", bottomRightB);
+	whosTurn = 0;
+	console.log(numOfMoves);
+}
+
 function topLeftB() {
 	document.getElementById("topLeft").onclick = null;
-	document.getElementById("topLeft").value = "X";
 	console.log("hit1");
+	buttonClicked.topLeft = true;
+	numOfMoves++
 }
 
 function topB() {
-	document.getElementById("top").onclick = null;
-	document.getElementById("top").value = "X";
 	console.log("hit2");
+	document.getElementById("top").onclick = null;
+	numOfMoves++
 }
 
 function topRightB() {
-	document.getElementById("topRight").onclick = null;
-	document.getElementById("topRight").value = "X";
 	console.log("hit3");
+	document.getElementById("topRight").onclick = null;
+	numOfMoves++
 }
 
 function leftB() {
-	document.getElementById("left").onclick = null;
-	document.getElementById("left").value = "X";
 	console.log("hit4");
+	document.getElementById("left").onclick = null;
+	numOfMoves++
 }
 
 function centerB() {
-	document.getElementById("center").onclick = null;
-	document.getElementById("center").value = "X";
 	console.log("hit5");
+	document.getElementById("center").onclick = null;
+	numOfMoves++
 }
 
 function rightB() {
-	document.getElementById("right").onclick = null;
-	document.getElementById("right").value = "X";
 	console.log("hit6");
+	document.getElementById("right").onclick = null;
+	numOfMoves++
 }
 
 function bottomLeftB() {
-	document.getElementById("bottomLeft").onclick = null;
-	document.getElementById("bottomLeft").value = "X";
 	console.log("hit7");
+	document.getElementById("bottomLeft").onclick = null;
+	numOfMoves++
 }
 
 function bottomB() {
-	document.getElementById("bottom").onclick = null;
-	document.getElementById("bottom").value = "X";
 	console.log("hit8");
+	document.getElementById("bottom").onclick = null;
+	numOfMoves++
 }
 
 function bottomRightB() {
-	document.getElementById("bottomRight").onclick = null;
-	document.getElementById("bottomRight").value = "X";
 	console.log("hit9");
+	document.getElementById("bottomRight").onclick = null;
+	numOfMoves++
 }

@@ -164,6 +164,12 @@ if (checker == true) {
 	alert(bar);
 }
 
+//01-27-2019
+//Having trouble figuring out how to switch between placing X's and O's
+//Feels like im missing something in the ol' dev toolbox to know how to do this
+//Thought this would be eaiser/make more sense :,[
+//More research later today
+
 };
 
 	function contactButton() {

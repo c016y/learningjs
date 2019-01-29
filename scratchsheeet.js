@@ -170,6 +170,13 @@ if (checker == true) {
 //Thought this would be eaiser/make more sense :,[
 //More research later today
 
+//01-28=2019
+//after a long day of Rocket League, I've managed to figure out how to make Tic-Tac-Toe work
+//rather simple, just had to think about it (duh)
+//Game currently switches players after each turn and resets after user clicks the board after all possible moves have been made
+//tomorrow, I will try and make it more user friendly by adding a Start Game button and a Reset Game button
+//Also need to make Win Conditions so the game will actually work
+
 };
 
 	function contactButton() {

@@ -5,7 +5,7 @@
 	<script src="/website/scratchsheeet.js"></script>
 </head>
 
-<style type="text/css">
+<style>
 
 	body {
 		font-family: arial;
@@ -19,16 +19,18 @@
 
 	.tictacToe {
 		margin: 0 auto;
-		width: 150px;
-		background:;
+		width: 206px;
+		background:red;
 	}
 
 	.inputBox {
-		border: none;
 		padding: 30px;
+		border: none;
 		font-weight: bold;
-		font-size: 16pt;
+		font-size: 20pt;
 		background-color: white;
+		width:15px;
+		height: 15px;
 	}
 
 </style>
@@ -72,37 +74,37 @@
 					<table>
 						<tr class="rowOne">
 							<th style="border-right: 3px solid ; border-bottom: 3px solid">
-								<button id="topLeft" onclick="gameButtons()">1</button>
+								<button class="inputBox" id="topLeft" onclick="gameButtons()"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<button id="top" onclick="gameButtons()">2</button>
+								<button class="inputBox" id="top" onclick="gameButtons()"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-bottom: 3px solid">
-								<button id="topRight" onclick="gameButtons()">3</button>
+								<button class="inputBox" id="topRight" onclick="gameButtons()"></button>
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-top: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<button id="left" onclick="gameButtons()">4</button>
+								<button class="inputBox" id="left" onclick="gameButtons()"></button>
 							</th>
 							<th style="border: 3px solid">
-								<button id="center" onclick="gameButtons()">5</button>
+								<button class="inputBox" id="center" onclick="gameButtons()"></button>
 							</th>
 							<th style="border-top: 3px solid ; border-left: 3px solid ; border-bottom: 3px solid">
-								<button id="right" onclick="gameButtons()">6</button>
+								<button class="inputBox" id="right" onclick="gameButtons()"></button>
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-right: 3px solid ; border-top: 3px solid">
-								<button id="bottomLeft" onclick="gameButtons()">7</button>
+								<button class="inputBox" id="bottomLeft" onclick="gameButtons()"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">
-								<button id="bottom" onclick="gameButtons()">8</button>
+								<button class="inputBox" id="bottom" onclick="gameButtons()"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-top: 3px solid">
-								<button id="bottomRight" onclick="gameButtons()">9</button>
+								<button class="inputBox" id="bottomRight" onclick="gameButtons()"></button>
 							</th>
 						</tr>
 					</table>

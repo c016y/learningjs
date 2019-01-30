@@ -2,7 +2,7 @@
 //cleared page
 //need to fix rock paper scissors
 
-	function webButton() {
+	function pracButton() {
 /*
 	alert("*broken* Rock, Paper, Scissors!")
 	
@@ -147,7 +147,7 @@
 	Start getting into RSS feed / API / Web-shit
 	Dice
 	Deck of Cards / Black Jack?
-*/
+
 //good short day tonight, its the next day so I'll commit later too
 
 var bar = 1;
@@ -163,6 +163,7 @@ changeBar();
 if (checker == true) {
 	alert(bar);
 }
+*/
 
 //01-27-2019
 //Having trouble figuring out how to switch between placing X's and O's
@@ -170,12 +171,48 @@ if (checker == true) {
 //Thought this would be eaiser/make more sense :,[
 //More research later today
 
-//01-28=2019
+//01-28-2019
 //after a long day of Rocket League, I've managed to figure out how to make Tic-Tac-Toe work
 //rather simple, just had to think about it (duh)
 //Game currently switches players after each turn and resets after user clicks the board after all possible moves have been made
 //tomorrow, I will try and make it more user friendly by adding a Start Game button and a Reset Game button
 //Also need to make Win Conditions so the game will actually work
+
+//01-29-2019
+//Great day today. Reworked Tic-Tac-Toe and managed to heavily reduce redunancy
+//Leaving today with the same product of last night, but much MUCH cleaner, and thus I can rest easy
+//I finally sort of understood how to use a contructor and got rid of all 9 of those hand written buttons
+//added a function to deactivated the buttons so players can't change the value of an already claimed space
+//just realized it's 12:00AM so I can't commit today, I'll have to commit on the 30th :,(
+//TOMORROW I FIGURE OUT WIN CONDITIONS
+
+
+/*
+function Car(make, model, year) {};
+
+var corolla = new Car("Toyota", "Corolla", "2015")
+alert(corolla.make)
+
+
+function webButton(element) {
+	if (buttonClicked.topLeft == false) {
+		numOfMoves++
+		document.getElementById(toString(element)).innerHTML = currentPlayer;
+		console.log("hit1");
+		buttonClicked.element = true;
+}
+
+var topLeftB = new webButton(topLeft)
+
+alert(topLeftB)
+
+*/
+
+var foo = "bar"
+
+var foo = window[foo]
+
+alert(typeof foo)
 
 };
 

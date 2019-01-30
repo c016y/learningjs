@@ -2,38 +2,9 @@
 <html>
 <head>
 	<title>home</title>
-	<script src="/website/scratchsheeet.js"></script>
+	<script src="/website/script/scratchsheeet.js"></script>
+	<link rel="stylesheet" type="text/css" href="/website/styles.css">
 </head>
-
-<style>
-
-	body {
-		font-family: arial;
-		text-align: center;
-	}
-
-	#payoffCalc {
-		border-style: solid;
-		margin-bottom: 10;
-	}
-
-	.tictacToe {
-		margin: 0 auto;
-		width: 206px;
-		background:red;
-	}
-
-	.inputBox {
-		padding: 30px;
-		border: none;
-		font-weight: bold;
-		font-size: 20pt;
-		background-color: white;
-		width:15px;
-		height: 15px;
-	}
-
-</style>
 <body>
 
 <!-- Info/Home -->
@@ -45,7 +16,7 @@
 	<div id="basic_info">
 		<p>I am currently learning Javascript. You can find what I've written on <b><a href="https://github.com/c016y">GitHub</a></b></p>
 
-		<button onclick="webButton()">Run my practice Javascript!</button> 
+		<button onclick="pracButton()">Run my practice Javascript!</button> 
 		<br><br>
 		<button onclick="contactButton()">Contact Me</button>
 	</div>
@@ -54,6 +25,7 @@
 		<h2>Projects</h2>
 
 <!-- Pay-Off Calculator-->
+		
 		<div id="payoffCalc">
 			<h3>Pay-Off Calculator</h3>
 			Let's get some more info about your loan.
@@ -63,52 +35,57 @@
 					I pay $<input type="text" name="payment_amount" id="payment_amount"> every month towards this loan. <br><br>
 					<input style="margin-bottom: 20px" type="submit" onclick="calcLoan()" value="Calculate">
 			</form>
-			<script src="/website/payoffcalculator.js"></script>
+			<script src="/website/script/payoffcalculator.js"></script>
 		</div>
+	<br>
 
-		<br>
 <!-- Tic-Tac-Toe -->
+
 		<div class="tictacToe">
 
 			<h3>Tic-Tac Toe</h3>
-					<table>
+					<table> <!-- Gameboard -->
 						<tr class="rowOne">
 							<th style="border-right: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="topLeft" onclick="gameButtons()"></button>
+								<button class="inputBox" id= "topLeft" onclick="webButton('topLeft'); webButtonOff('topLeft');"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="top" onclick="gameButtons()"></button>
+								<button class="inputBox" id="top" onclick="webButton('top'); webButtonOff('top');"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="topRight" onclick="gameButtons()"></button>
+								<button class="inputBox" id="topRight" onclick="webButton('topRight'); webButtonOff('topRight');"></button>
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-top: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="left" onclick="gameButtons()"></button>
+								<button class="inputBox" id="left" onclick="webButton('left'); webButtonOff('left');"></button>
 							</th>
 							<th style="border: 3px solid">
-								<button class="inputBox" id="center" onclick="gameButtons()"></button>
+								<button class="inputBox" id="center" onclick="webButton('center'); webButtonOff('center');"></button>
 							</th>
 							<th style="border-top: 3px solid ; border-left: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="right" onclick="gameButtons()"></button>
+								<button class="inputBox" id="right" onclick="webButton('right'); webButtonOff('right');"></button>
 							</th>
 						</tr>
 
 						<tr>
 							<th style="border-right: 3px solid ; border-top: 3px solid">
-								<button class="inputBox" id="bottomLeft" onclick="gameButtons()"></button>
+								<button class="inputBox" id="bottomLeft" onclick="webButton('bottomLeft'); webButtonOff('bottomLeft');"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">
-								<button class="inputBox" id="bottom" onclick="gameButtons()"></button>
+								<button class="inputBox" id="bottom" onclick="webButton('bottom'); webButtonOff('bottom')"></button>
 							</th>
 							<th style="border-left: 3px solid ; border-top: 3px solid">
-								<button class="inputBox" id="bottomRight" onclick="gameButtons()"></button>
+								<button class="inputBox" id="bottomRight" onclick="webButton('bottomRight'); webButtonOff('bottomRight')"></button>
 							</th>
 						</tr>
 					</table>
-					<script src="/website/tictacToe.js"></script>
+					<script src="/website/script/tictacToe.js"></script>
+		</div>
+
+		<div id="gameOptions">
+			<button class="gameOptionsButton" id="resetButton" onclick="gameReset()">RESET</button>
 		</div>
 
 	</div>

@@ -1,0 +1,33 @@
+body {
+		font-family: arial;
+		text-align: center;
+	}
+
+	button {
+		color: black;
+	}
+
+	#payoffCalc {
+		border-style: solid;
+		margin-bottom: 10;
+	}
+
+	.tictacToe {
+		margin: 0 auto;
+		width: 206px;
+		background:red;
+	}
+
+	.inputBox {
+		padding: 30px;
+		border: none;
+		font-weight: bold;
+		font-size: 20pt;
+		background-color: white;
+		width:15px;
+		height: 15px;
+	}
+
+	.inputBox.disabled {
+		color:inherit;
+	}

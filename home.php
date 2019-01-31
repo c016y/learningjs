@@ -46,46 +46,46 @@
 			<h3>Tic-Tac Toe</h3>
 					<table> <!-- Gameboard -->
 						<tr class="rowOne">
-							<th style="border-right: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id= "topLeft" onclick="webButton('topLeft'); webButtonOff('topLeft');"></button>
-							</th>
-							<th style="border-left: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="top" onclick="webButton('top'); webButtonOff('top');"></button>
-							</th>
-							<th style="border-left: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="topRight" onclick="webButton('topRight'); webButtonOff('topRight');"></button>
-							</th>
+							<td style="border-right: 3px solid ; border-bottom: 3px solid">
+								<button class="inputBox" id= "topLeft" onclick="tictactoeButton('topLeft');  tictactoeRef()"></button>
+							</td>
+							<td style="border-left: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
+								<button class="inputBox" id="top" onclick="tictactoeButton('top'); tictactoeRef()"></button>
+							</td>
+							<td style="border-left: 3px solid ; border-bottom: 3px solid">
+								<button class="inputBox" id="topRight" onclick="tictactoeButton('topRight'); tictactoeRef()"></button>
+							</td>
 						</tr>
 
 						<tr>
-							<th style="border-top: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="left" onclick="webButton('left'); webButtonOff('left');"></button>
-							</th>
-							<th style="border: 3px solid">
-								<button class="inputBox" id="center" onclick="webButton('center'); webButtonOff('center');"></button>
-							</th>
-							<th style="border-top: 3px solid ; border-left: 3px solid ; border-bottom: 3px solid">
-								<button class="inputBox" id="right" onclick="webButton('right'); webButtonOff('right');"></button>
-							</th>
+							<td style="border-top: 3px solid ; border-right: 3px solid ; border-bottom: 3px solid">
+								<button class="inputBox" id="left" onclick="tictactoeButton('left'); tictactoeRef()"></button>
+							</td>
+							<td style="border: 3px solid">
+								<button class="inputBox" id="center" onclick="tictactoeButton('center');  tictactoeRef()"></button>
+							</td>
+							<td style="border-top: 3px solid ; border-left: 3px solid ; border-bottom: 3px solid">
+								<button class="inputBox" id="right" onclick="tictactoeButton('right');  tictactoeRef()"></button>
+							</td>
 						</tr>
 
 						<tr>
-							<th style="border-right: 3px solid ; border-top: 3px solid">
-								<button class="inputBox" id="bottomLeft" onclick="webButton('bottomLeft'); webButtonOff('bottomLeft');"></button>
-							</th>
-							<th style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">
-								<button class="inputBox" id="bottom" onclick="webButton('bottom'); webButtonOff('bottom')"></button>
-							</th>
-							<th style="border-left: 3px solid ; border-top: 3px solid">
-								<button class="inputBox" id="bottomRight" onclick="webButton('bottomRight'); webButtonOff('bottomRight')"></button>
-							</th>
+							<td style="border-right: 3px solid ; border-top: 3px solid">
+								<button class="inputBox" id="bottomLeft" onclick="tictactoeButton('bottomLeft'); tictactoeRef()"></button>
+							</td>
+							<td style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">
+								<button class="inputBox" id="bottom" onclick="tictactoeButton('bottom'); tictactoeRef()"></button>
+							</td>
+							<td style="border-left: 3px solid ; border-top: 3px solid">
+								<button class="inputBox" id="bottomRight" onclick="tictactoeButton('bottomRight');  tictactoeRef()"></button>
+							</td>
 						</tr>
 					</table>
 					<script src="/website/script/tictacToe.js"></script>
 		</div>
-
+		<br>
 		<div id="gameOptions">
-			<button class="gameOptionsButton" id="resetButton" onclick="gameReset()">RESET</button>
+			<button class="gameOptionsButton" id="resetButton" onclick="tictactoeReset()">RESET</button>
 		</div>
 
 	</div>

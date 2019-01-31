@@ -206,13 +206,18 @@ var topLeftB = new webButton(topLeft)
 
 alert(topLeftB)
 
-*/
+
 
 var foo = "bar"
 
 var foo = window[foo]
 
 alert(typeof foo)
+*/
+
+//01-30-2019
+//started working on win conditions.
+//need to assign which button was clicked by who to compare it to some sort of meta.
 
 };
 

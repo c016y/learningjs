@@ -43,7 +43,7 @@
 
 		<div class="tictacToe">
 
-			<h3>Tic-Tac Toe</h3>
+			<h2>Tic-Tac Toe</h2>
 					<table> <!-- Gameboard -->
 						<tr class="rowOne">
 							<td style="border-right: 3px solid ; border-bottom: 3px solid">
@@ -85,7 +85,9 @@
 		</div>
 		<br>
 		<div id="gameOptions">
-			<button class="gameOptionsButton" id="resetButton" onclick="tictactoeReset()">RESET</button>
+			<span>
+				<button class="gameOptionsButton" id="resetButton" onclick="tictactoeReset()">RESET</button>
+			</span>
 		</div>
 
 	</div>

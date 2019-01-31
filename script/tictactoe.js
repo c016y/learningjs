@@ -3,12 +3,14 @@
 var numOfMoves = 0;
 var currentPlayer = checkPlayer();
 var currentMove = undefined;
+var xScore = 0;
+var oScore = 0;
 
 function tictactoeButton(element) { // display player move
 		checkPlayer();
 		document.getElementById(element).innerHTML = currentPlayer;
 		document.getElementById(element).disabled = true;
-}
+};
 
 function checkPlayer() { //Should I place an X or an O?
 	if  (numOfMoves == 1 || numOfMoves == 3 || numOfMoves == 5 || numOfMoves == 7) {
@@ -31,9 +33,17 @@ function tictactoeRef() { //runs to add value to player moves and check for win
 	var bottomR = document.getElementById("bottomRight").innerHTML
 
 	function checkWin(x, y, z) {
-			if (x == "X" && y == "X" && z == "X") { alert("X Wins!"); } 
-			else if (x == "O" && y == "O" && z == "O") { alert("O Wins!"); }
-	}
+			if (x == "X" && y == "X" && z == "X") { 
+				alert("X Wins!");
+				switchTictactoeButtons(true);
+				xScore++
+			 }
+			else if (x == "O" && y == "O" && z == "O") {
+				alert("O Wins!");
+				switchTictactoeButtons(true);
+				oScore++
+			};
+	};
 
 	checkWin(topL, top, topR); //horizontal
 	checkWin(left, center, right);
@@ -51,15 +61,7 @@ function tictactoeReset() { //clear currentPlayer and buttonClicked values
 	currentPlayer = " "; //clearing values
 	numOfMoves = 0;
 
-	document.getElementById("topLeft").disabled = false; //activate buttons
-	document.getElementById("top").disabled = false;
-	document.getElementById("topRight").disabled = false;
-	document.getElementById("left").disabled = false;
-	document.getElementById("center").disabled = false;
-	document.getElementById("right").disabled = false;
-	document.getElementById("bottomLeft").disabled = false;
-	document.getElementById("bottom").disabled = false;
-	document.getElementById("bottomRight").disabled = false;
+	switchTictactoeButtons(false);
 
 	document.getElementById("topLeft").innerHTML = currentPlayer; //reseting game-board
 	document.getElementById("top").innerHTML = currentPlayer;
@@ -71,7 +73,16 @@ function tictactoeReset() { //clear currentPlayer and buttonClicked values
 	document.getElementById("bottom").innerHTML = currentPlayer;
 	document.getElementById("bottomRight").innerHTML = currentPlayer;
 	currentPlayer = "X"; //starting next round
-}
+};
 
-
-
+function switchTictactoeButtons(state) {
+	document.getElementById("topLeft").disabled = state; //activate buttons
+	document.getElementById("top").disabled = state;
+	document.getElementById("topRight").disabled = state;
+	document.getElementById("left").disabled = state;
+	document.getElementById("center").disabled = state;
+	document.getElementById("right").disabled = state;
+	document.getElementById("bottomLeft").disabled = state;
+	document.getElementById("bottom").disabled = state;
+	document.getElementById("bottomRight").disabled = state;
+};

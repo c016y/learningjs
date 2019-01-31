@@ -217,8 +217,14 @@ alert(typeof foo)
 
 //01-30-2019
 //started working on win conditions.
-//need to assign which button was clicked by who to compare it to some sort of meta.
+//need to assign which button was clicked by who to compare it to some sort of meta
+//disabled buttons after win
+//the last move before a win does not apear on the game board until after the win alert is triggered, needs to be fixed
+//find a way to draw a line thru the winning moves after win
+//clean it up and add more styles
+//after this project I want to work on my web design, layouts, responsivness, etc. Need to build a real website.
 
+alert("This button just shows this message right now :]");
 };
 
 	function contactButton() {

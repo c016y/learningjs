@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>home</title>
-	<script src="/website/script/scratchsheeet.js"></script>
+	<script src="/website/script/practicelog.js"></script>
 	<link rel="stylesheet" type="text/css" href="/website/styles.css">
 </head>
 <body>

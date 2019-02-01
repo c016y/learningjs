@@ -1,6 +1,5 @@
 body {
 		font-family: arial;
-		text-align: center;
 	}
 
 	button {
@@ -10,12 +9,13 @@ body {
 	#payoffCalc {
 		border-style: solid;
 		margin-bottom: 10;
+		text-align: center;
 	}
 
 	.tictacToe {
 		margin: 0 auto;
 		width: 206px;
-		background:;
+		background:red;
 	}
 
 	.inputBox {
@@ -30,4 +30,21 @@ body {
 
 	.inputBox.disabled {
 		color:inherit;
+	}
+
+	.winImg {
+	 margin: 0 auto; 
+	 position: absolute; 
+	}
+
+	#basicInfo {
+		text-align: center;
+	}
+
+	#tictactoeGameBoard {
+		text-align: center;
+	}
+
+	#winImgs {
+		opacity: 0%;
 	}

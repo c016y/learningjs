@@ -22,6 +22,9 @@ function checkPlayer() { //Should I place an X or an O?
 };
 
 function tictactoeRef() { //runs to add value to player moves and check for win
+
+	var winningMove = 0;
+	
 	var topL = document.getElementById("topLeft").innerHTML
 	var top = document.getElementById("top").innerHTML 
 	var topR = document.getElementById("topRight").innerHTML
@@ -32,27 +35,38 @@ function tictactoeRef() { //runs to add value to player moves and check for win
 	var bottom = document.getElementById("bottom").innerHTML
 	var bottomR = document.getElementById("bottomRight").innerHTML
 
-	function checkWin(x, y, z) {
+	function checkWin(x, y, z, move) {
 			if (x == "X" && y == "X" && z == "X") { 
 				alert("X Wins!");
 				switchTictactoeButtons(true);
 				xScore++
+				winningMove = move;
 			 }
 			else if (x == "O" && y == "O" && z == "O") {
 				alert("O Wins!");
 				switchTictactoeButtons(true);
 				oScore++
-			};
-	};
+				winningMove = move;
+			}
+	}
 
-	checkWin(topL, top, topR); //horizontal
-	checkWin(left, center, right);
-	checkWin(bottomL, bottom, bottomR);
-	checkWin(topL, left, bottomL); //verticle
-	checkWin(top, center, bottom);
-	checkWin(topR, right, bottomR); 
-	checkWin(topL, center, bottomR); //diagonal
-	checkWin(bottomL, center, topR);
+	checkWin(topL, top, topR, 1)//horizontal
+	checkWin(left, center, right, 2);
+	checkWin(bottomL, bottom, bottomR, 3);
+	checkWin(topL, left, bottomL, 4);//verticle
+	checkWin(top, center, bottom, 5);
+	checkWin(topR, right, bottomR, 6);
+	checkWin(topL, center, bottomR, 7);//diagonal
+	checkWin(bottomL, center, topR, 8);
+
+	document.getElementById("leftWinImg")
+	document.getElementById("vertCenterWinImg")
+	document.getElementById("rightWinImg")
+	document.getElementById("topWinImg")
+	document.getElementById("horzCenterWinImg")
+	document.getElementById("bottomWinImg")
+	document.getElementById("diagUpWinImg")
+	document.getElementById("diagDownWinImg")
 
 	numOfMoves++
 };

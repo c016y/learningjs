@@ -227,6 +227,12 @@ alert(typeof foo)
 alert("This button just shows this message right now :]");
 };
 
+//01-31-2019
+//very tired today, cannot think straight
+//added numbers to the paremeters for checkWin() so I can tell what move won the game
+//need to find a way to use those values to make the line come up
+//can't do much else today, brain is fried
+
 	function contactButton() {
 		alert("c016yinbox@gmail.com");
 	};

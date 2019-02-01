@@ -8,12 +8,12 @@
 <body>
 
 <!-- Info/Home -->
-	<header class="header">
+	<div id="basicInfo">
+	<header>
 		<h3> My name is <b> Colby</b> and I'm trying to get a <b>dev job</b> </h3>
 		<h4> This is my website to show you what I know </h4>
 	</header>
 
-	<div id="basic_info">
 		<p>I am currently learning Javascript. You can find what I've written on <b><a href="https://github.com/c016y">GitHub</a></b></p>
 
 		<button onclick="pracButton()">Run my practice Javascript!</button> 
@@ -22,7 +22,7 @@
 	</div>
 
 	<div id="examples" class="projects">
-		<h2>Projects</h2>
+	<h2 style="text-align: center;">Projects</h2>
 
 <!-- Pay-Off Calculator-->
 		
@@ -43,7 +43,19 @@
 
 		<div class="tictacToe">
 
-			<h2>Tic-Tac Toe</h2>
+			<h2 style="text-align: center;">Tic-Tac Toe</h2>
+
+				<div id="winImgs">
+					<img id="leftWinImg" class="winImg" src="/website/img/left.png">
+					<img id="vertCenterWinImg" class="winImg" src="/website/img/vert_center.png">
+					<img id="rightWinImg" class="winImg" src="/website/img/right.png">
+					<img id="topWinImg" class="winImg" src="/website/img/top.png">
+					<img id="horzCenterWinImg" class="winImg" src="/website/img/horz_center.png">
+					<img id="bottomWinImg" class="winImg" src="/website/img/bottom.png">
+					<img id="diagUpWinImg" class="winImg" src="/website/img/daig_up.png">
+					<img id="diagDownWinImg" class="winImg" src="/website/img/diag_down.png">
+				</div>
+
 					<table> <!-- Gameboard -->
 						<tr class="rowOne">
 							<td style="border-right: 3px solid ; border-bottom: 3px solid">
@@ -81,15 +93,14 @@
 							</td>
 						</tr>
 					</table>
+
 					<script src="/website/script/tictacToe.js"></script>
+
+					<span>
+						<button class="resetButton" id="resetButton" onclick="tictactoeReset()">RESET</button>
+					</span>
 		</div>
 		<br>
-		<div id="gameOptions">
-			<span>
-				<button class="gameOptionsButton" id="resetButton" onclick="tictactoeReset()">RESET</button>
-			</span>
-		</div>
-
 	</div>
 	
 </body>

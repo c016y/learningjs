@@ -45,6 +45,6 @@ body {
 		text-align: center;
 	}
 
-	#winImgs {
-		opacity: 0%;
+	.winImg {
+		pointer-events: none;
 	}

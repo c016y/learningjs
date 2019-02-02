@@ -6,6 +6,16 @@ var currentMove = undefined;
 var xScore = 0;
 var oScore = 0;
 
+// const topL = document.getElementById("topLeft");
+// const top = document.getElementById("top"); 
+// const topR = document.getElementById("topRight");
+// const left = document.getElementById("left");
+// const center = document.getElementById("center");
+// const right = document.getElementById("right");
+// const bottomL = document.getElementById("bottomLeft");
+// const bottom = document.getElementById("bottom");
+// const bottomR = document.getElementById("bottomRight");
+
 function tictactoeButton(element) { // display player move
 		checkPlayer();
 		document.getElementById(element).innerHTML = currentPlayer;
@@ -25,15 +35,15 @@ function tictactoeRef() { //runs to add value to player moves and check for win
 
 	var winningMove = 0;
 	
-	var topL = document.getElementById("topLeft").innerHTML
-	var top = document.getElementById("top").innerHTML 
-	var topR = document.getElementById("topRight").innerHTML
-	var left = document.getElementById("left").innerHTML
-	var center = document.getElementById("center").innerHTML
-	var right = document.getElementById("right").innerHTML
-	var bottomL = document.getElementById("bottomLeft").innerHTML
-	var bottom = document.getElementById("bottom").innerHTML
-	var bottomR = document.getElementById("bottomRight").innerHTML
+	var topLValue = document.getElementById("topLeft").innerHTML
+	var topValue = document.getElementById("top").innerHTML 
+	var topRValue = document.getElementById("topRight").innerHTML
+	var leftValue = document.getElementById("left").innerHTML
+	var centerValue = document.getElementById("center").innerHTML
+	var rightValue = document.getElementById("right").innerHTML
+	var bottomLValue = document.getElementById("bottomLeft").innerHTML
+	var bottomValue = document.getElementById("bottom").innerHTML
+	var bottomRValue = document.getElementById("bottomRight").innerHTML
 
 	function checkWin(x, y, z, move) {
 			if (x == "X" && y == "X" && z == "X") { 
@@ -50,23 +60,27 @@ function tictactoeRef() { //runs to add value to player moves and check for win
 			}
 	}
 
-	checkWin(topL, top, topR, 1)//horizontal
-	checkWin(left, center, right, 2);
-	checkWin(bottomL, bottom, bottomR, 3);
-	checkWin(topL, left, bottomL, 4);//verticle
-	checkWin(top, center, bottom, 5);
-	checkWin(topR, right, bottomR, 6);
-	checkWin(topL, center, bottomR, 7);//diagonal
-	checkWin(bottomL, center, topR, 8);
+	checkWin(topLValue, topValue, topRValue, 1)//horizontal
+	checkWin(leftValue, centerValue, rightValue, 2);
+	checkWin(bottomLValue, bottomValue, bottomRValue, 3);
+	checkWin(topLValue, leftValue, bottomLValue, 4);//verticle
+	checkWin(topValue, centerValue, bottomValue, 5);
+	checkWin(topRValue, rightValue, bottomRValue, 6);
+	checkWin(topLValue, centerValue, bottomRValue, 7);//diagonal
+	checkWin(bottomLValue, centerValue, topRValue, 8);
 
-	document.getElementById("leftWinImg")
-	document.getElementById("vertCenterWinImg")
-	document.getElementById("rightWinImg")
-	document.getElementById("topWinImg")
-	document.getElementById("horzCenterWinImg")
-	document.getElementById("bottomWinImg")
-	document.getElementById("diagUpWinImg")
-	document.getElementById("diagDownWinImg")
+	function drawLine() {
+		switch (winningMove) {
+		case 4: document.getElementById("leftWinImg").style.opacity = 1; 
+		case 5: document.getElementById("vertCenterWinImg").style.opacity = 1;
+		case 6: document.getElementById("rightWinImg").style.opacity = 1;
+		case 1: document.getElementById("topWinImg").style.opacity = 1;
+		case 2: document.getElementById("horzCenterWinImg").style.opacity = 1;
+		case 3: document.getElementById("bottomWinImg").style.opacity = 1;
+		case 8: document.getElementById("diagUpWinImg").style.opacity = 1;
+		case 7: document.getElementById("diagDownWinImg").style.opacity = 1;
+		}
+	}
 
 	numOfMoves++
 };
@@ -76,6 +90,8 @@ function tictactoeReset() { //clear currentPlayer and buttonClicked values
 	numOfMoves = 0;
 
 	switchTictactoeButtons(false);
+
+	clearImages();
 
 	document.getElementById("topLeft").innerHTML = currentPlayer; //reseting game-board
 	document.getElementById("top").innerHTML = currentPlayer;
@@ -99,4 +115,15 @@ function switchTictactoeButtons(state) {
 	document.getElementById("bottomLeft").disabled = state;
 	document.getElementById("bottom").disabled = state;
 	document.getElementById("bottomRight").disabled = state;
+};
+
+function clearImages() {
+	document.getElementById("leftWinImg").style.opacity = 0; 
+	document.getElementById("vertCenterWinImg").style.opacity = 0;
+	document.getElementById("rightWinImg").style.opacity = 0;
+	document.getElementById("topWinImg").style.opacity = 0;
+	document.getElementById("horzCenterWinImg").style.opacity = 0;
+	document.getElementById("bottomWinImg").style.opacity = 0;
+	document.getElementById("diagUpWinImg").style.opacity = 0;
+	document.getElementById("diagDownWinImg").style.opacity = 0;
 };

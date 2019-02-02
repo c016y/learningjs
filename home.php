@@ -46,14 +46,14 @@
 			<h2 style="text-align: center;">Tic-Tac Toe</h2>
 
 				<div id="winImgs">
-					<img id="leftWinImg" class="winImg" src="/website/img/left.png">
-					<img id="vertCenterWinImg" class="winImg" src="/website/img/vert_center.png">
-					<img id="rightWinImg" class="winImg" src="/website/img/right.png">
-					<img id="topWinImg" class="winImg" src="/website/img/top.png">
-					<img id="horzCenterWinImg" class="winImg" src="/website/img/horz_center.png">
-					<img id="bottomWinImg" class="winImg" src="/website/img/bottom.png">
-					<img id="diagUpWinImg" class="winImg" src="/website/img/daig_up.png">
-					<img id="diagDownWinImg" class="winImg" src="/website/img/diag_down.png">
+					<img id="leftWinImg" class="winImg" src="/website/img/left.png" style="opacity: 0.0">
+					<img id="vertCenterWinImg" class="winImg" src="/website/img/vert_center.png" style="opacity: 0.0">
+					<img id="rightWinImg" class="winImg" src="/website/img/right.png" style="opacity: 0.0">
+					<img id="topWinImg" class="winImg" src="/website/img/top.png" style="opacity: 0.0">
+					<img id="horzCenterWinImg" class="winImg" src="/website/img/horz_center.png" style="opacity: 0.0">
+					<img id="bottomWinImg" class="winImg" src="/website/img/bottom.png" style="opacity: 0.0">
+					<img id="diagUpWinImg" class="winImg" src="/website/img/daig_up.png" style="opacity: 0.0">
+					<img id="diagDownWinImg" class="winImg" src="/website/img/diag_down.png" style="opacity: 0.0">
 				</div>
 
 					<table> <!-- Gameboard -->

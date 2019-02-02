@@ -57,7 +57,7 @@
 				</div>
 
 					<table> <!-- Gameboard -->
-						<tr class="rowOne">
+						<tr>
 							<td style="border-right: 3px solid ; border-bottom: 3px solid">
 								<button class="inputBox" id= "topLeft" onclick="tictactoeButton('topLeft');  tictactoeRef()"></button>
 							</td>
@@ -96,7 +96,7 @@
 
 					<script src="/website/script/tictacToe.js"></script>
 
-					<span>
+					<div id="resetButtonStyle">
 						<button class="resetButton" id="resetButton" onclick="tictactoeReset()">RESET</button>
 					</span>
 		</div>

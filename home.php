@@ -95,10 +95,10 @@
 					</table>
 
 					<script src="/website/script/tictacToe.js"></script>
-
+					<br>
 					<div id="resetButtonStyle">
-						<button class="resetButton" id="resetButton" onclick="tictactoeReset()">RESET</button>
-					</span>
+						<button class="resetButton" id="resetButton" onclick="tictactoeReset()"><b>RESET</b></button>
+					</div>
 		</div>
 		<br>
 	</div>

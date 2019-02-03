@@ -233,6 +233,9 @@ alert("This button just shows this message right now :]");
 //need to find a way to use those values to make the line come up
 //can't do much else today, brain is fried
 
+//02-01-2019
+
+
 	function contactButton() {
 		alert("c016yinbox@gmail.com");
 	};

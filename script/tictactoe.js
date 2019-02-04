@@ -1,20 +1,18 @@
-"use strict";
-
 var numOfMoves = 0;
 var currentPlayer = checkPlayer();
 var currentMove = undefined;
 var xScore = 0;
 var oScore = 0;
 
-const topL = document.getElementById("topLeft");
-const topC = document.getElementById("top"); 
-const topR = document.getElementById("topRight");
-const left = document.getElementById("left");
-const center = document.getElementById("center");
-const right = document.getElementById("right");
-const bottomL = document.getElementById("bottomLeft");
-const bottomC = document.getElementById("bottom");
-const bottomR = document.getElementById("bottomRight");
+var topL = document.getElementById("topLeft");
+var topC = document.getElementById("top"); 
+var topR = document.getElementById("topRight");
+var left = document.getElementById("left");
+var center = document.getElementById("center");
+var right = document.getElementById("right");
+var bottomL = document.getElementById("bottomLeft");
+var bottomC = document.getElementById("bottom");
+var bottomR = document.getElementById("bottomRight");
 
 function tictactoeButton(element) { // display player move
 		checkPlayer();

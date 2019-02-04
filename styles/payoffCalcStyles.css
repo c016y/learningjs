@@ -1,0 +1,8 @@
+body {
+		font-family: arial;
+	}
+#payoffCalc {
+		border-style: solid;
+		margin-bottom: 10;
+		text-align: center;
+	}

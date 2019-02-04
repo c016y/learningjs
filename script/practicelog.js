@@ -245,6 +245,9 @@ alert("This button just shows this message right now :]");
 //should have commited earlier, doing some restructoring so my scripts don't get to clustered.
 //switched from Sublime to VS Code and don't have to many complaints except it wont autofill, but theres an extension for that
 //just commited but didn't even mention that I started work on my next project, navbars. I want to get good at navbars.
+//finally sort of done with that, moving on to making a navbar
+//making a navbar with a unordered list and flexbox, have a basic layout ready for messing with, want to work on responsiveness
+//will start tomorrow.
 
 
 	function contactButton() {

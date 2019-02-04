@@ -11,10 +11,10 @@
     <div id="navbar1">
 		<nav>
 			<div class="logo">
-				<img src="/website/img/RGLOGO.png" height="">
+				<img src="/website/img/RGLOGO.png" width="250px">
 			</div>
 
-			<ul>
+			<ul class="nav-links">
 				<li>
 					<a href="#">Service</a>
 				</li>

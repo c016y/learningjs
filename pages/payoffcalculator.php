@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pay-Off Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/website/styles/payoffcalcStyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/website/styles/payoffcalc.css" />
     <script src="/website/script/payoffcalculator.js"></script>
 </head>
 <body>

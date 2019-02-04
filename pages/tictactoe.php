@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tic-Tac-Toe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/website/styles/tictactoeStyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/website/styles/tictactoe.css" />
     <script src="/website/script/tictactoe.js"></script>
 </head>
 <body>
@@ -13,7 +13,7 @@
 
 				<h2 style="text-align: center;">Tic-Tac Toe</h2>
 
-					<div id="winImgs">
+					<div id="winImgs"> <!--imgs to display after a win -->
 						<img id="leftWinImg" class="winImg" src="/website/img/left.png" style="opacity: 0.0">
 						<img id="vertCenterWinImg" class="winImg" src="/website/img/vert_center.png" style="opacity: 0.0">
 						<img id="rightWinImg" class="winImg" src="/website/img/right.png" style="opacity: 0.0">
@@ -50,7 +50,7 @@
 							</tr>
 
 							<tr>
-								<td style="border-right: 3px solid ; border-top: 3px solid">
+								<td style="border-right: 3px solid ; border-top: 3px solid"> 
 									<button class="inputBox" id="bottomLeft" onclick="tictactoeButton('bottomLeft'); tictactoeRef()"></button>
 								</td>
 								<td style="border-left: 3px solid ; border-right: 3px solid ; border-top: 3px solid">

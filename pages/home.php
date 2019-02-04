@@ -3,7 +3,8 @@
 <head>
 	<title>home</title>
 	<script src="/website/script/practicelog.js"></script>
-	<link rel="stylesheet" type="text/css" href="/website/styles.css">
+	<link rel="stylesheet" type="text/css" href="/website/styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="/website/styles/navbar1Styles.css">
 </head>
 <body>
 
@@ -99,9 +100,36 @@
 					<div id="resetButtonStyle">
 						<button class="resetButton" id="resetButton" onclick="tictactoeReset()"><b>RESET</b></button>
 					</div>
+			</div>
+			<br>
+
+			<div id="navbar1">
+				<nav>
+					<div class="logo">
+						<img src="/website/img/RGLOGO.png" height="">
+					</div>
+
+					<ul>
+						<li>
+							<a href="#">Service</a>
+						</li>
+						<li>
+							<a href="#">Maintenance</a>
+						</li>
+						<li>
+							<a href="#">Fence and Gate</a>
+						</li>
+						<li>
+							<a href="#">New Construction</a>
+						</li>
+						<li>
+							<a href="#">Upgrade Facilities</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
 		</div>
-		<br>
-	</div>
 	
 </body>
 </html>

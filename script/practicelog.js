@@ -234,6 +234,14 @@ alert("This button just shows this message right now :]");
 //can't do much else today, brain is fried
 
 //02-01-2019
+//oops didn't write anything yesterday
+//Cleaned up stuff I think refer to GitHub
+
+//02-02-2019
+//I need to call tic-tac-toe quits. It's working so Im gonna leave it how it is, I will come back and improve later
+//nothing today really, research for my next project
+
+//02-03-2019
 
 
 	function contactButton() {

@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: red;
+    text-decoration: none;
 }
 
 nav {
@@ -9,10 +12,32 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
+    background-color: white;
+}
+
+li {
+    list-style-type: none;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 40% ;
+    font-size: 14pt;
+}
+
+#home_img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#home_hero {
+    color: white;
+    font-size: 80pt;
+    align-items: center;
+}
+
+#hero_box {
+    display: flex;
 }

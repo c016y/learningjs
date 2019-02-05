@@ -224,8 +224,7 @@ alert(typeof foo)
 //clean it up and add more styles
 //after this project I want to work on my web design, layouts, responsivness, etc. Need to build a real website.
 
-alert("This button just shows this message right now :]");
-};
+//alert("This button just shows this message right now :]");
 
 //01-31-2019
 //very tired today, cannot think straight
@@ -249,7 +248,27 @@ alert("This button just shows this message right now :]");
 //making a navbar with a unordered list and flexbox, have a basic layout ready for messing with, want to work on responsiveness
 //will start tomorrow.
 
+//02-04-2019
+//Messed with navbar a little
+//tried to add an image and center some text on the image but failed and didn't try that hard honestly
+//kind of lolly-gagged today and played with Trello.
+//need to work much harder tomorrow and stay focused
+//YOU CAN DO IT. 
 
+
+var pushupAmount = prompt("How many pushups can you do?");
+
+if (pushupAmount < 10) {	
+	alert("You should do more pushups")
+} else if (pushupAmount > 10 && pushupAmount < 30) {
+	alert("Yeah dawg me too")
+} else if (pushupAmount > 30) {
+	alert("Damn B, you strong as hell")
+} else {
+	alert("Please enter a number that is greater than -1");
+}
+
+};
 	function contactButton() {
 		alert("c016yinbox@gmail.com");
 	};

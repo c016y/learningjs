@@ -268,6 +268,31 @@ if (pushupAmount < 10) {
 	alert("Please enter a number that is greater than -1");
 }
 
+
+//02-05-2019
+//Today I want to focus on CSS, I will be messing around with things and watching videos :]
+//So far I've learned about the box model. Which is a box that wraps around every element in HTML.
+//This box consists of the content itself, padding, border, then margin. This helps understand the box-sizing style
+//Which includes parts of the box model as the content itself.
+//Next thing I learned was about Specificity. Specificity is the rules that govern which style to apply if there are
+//2 confliciting things assining styles. 
+//1: !important at the end of a style decloration will tell the browser to use that style. 
+//2: ID has second most priority over
+//3: Class which has more priority over
+//unlabled elements such as div, nav, etc.
+//The next thing I learned is great because it answered a problem I ran into last night.
+//The goal is to center an element inside another element. There are several ways to do this, but a plain css way will work.
+//The simplest way is the set top, left, bottom, adn right to 0 (top: 0; left: 0; bottom: 0; right: 0;)\
+//and set margin to auto (margin: auto;)
+//Next thing is the difference between static, relative, absolute, and fixed positioning.
+//static referes to the default styling inside of HTML.
+//relative refers to positioning an element itself, without effecting other elements.
+//absolute refers to positioning an element itself, with effecting other elements.
+//fixed refers to to positioning an item on screen that is not effected by scrolling.
+//Lastly, the difference between visibility: hidden; and display: none;
+//Very simple, Visibility: hidden; leaves spacing for the hidden element as if it is still there, just invisible.
+//Display: none; removes the element from the page, including the space it occupyed. NOTE: The element still exists within the DOM
+
 };
 	function contactButton() {
 		alert("c016yinbox@gmail.com");

@@ -35,12 +35,12 @@
 		</nav>
 	</div>
 
-	<div id="hero_box"> 
-		<div>
-			<img id="home_img" src="/website/img/test144.jpg" width="100%">
+		<div class="hero_box"> 
+			<img id="home_img" src="/website/img/test144.jpg">
+			<div class="hero_text">
+				<h1>Honest Craftsmen Since 1999</h1>
+			</div>
 		</div>
-			<span>	<h1 id="home_hero">Honest Craftsmen Since 1999</h1> </span>
-	</div>
 
 </body>
 </html>

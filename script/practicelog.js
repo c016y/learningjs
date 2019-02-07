@@ -2,7 +2,7 @@
 //cleared page
 //need to fix rock paper scissors
 
-	function pracButton() {
+	//function pracButton() {
 /*
 	alert("*broken* Rock, Paper, Scissors!")
 	
@@ -255,7 +255,7 @@ alert(typeof foo)
 //need to work much harder tomorrow and stay focused
 //YOU CAN DO IT. 
 
-
+/*
 var pushupAmount = prompt("How many pushups can you do?");
 
 if (pushupAmount < 10) {	
@@ -267,7 +267,7 @@ if (pushupAmount < 10) {
 } else {
 	alert("Please enter a number that is greater than -1");
 }
-
+*/
 
 //02-05-2019
 //Today I want to focus on CSS, I will be messing around with things and watching videos :]
@@ -292,8 +292,27 @@ if (pushupAmount < 10) {
 //Lastly, the difference between visibility: hidden; and display: none;
 //Very simple, Visibility: hidden; leaves spacing for the hidden element as if it is still there, just invisible.
 //Display: none; removes the element from the page, including the space it occupyed. NOTE: The element still exists within the DOM
+//I need to learn as much about css for the rest of the week, and then get started on some Jquery so I can start working with API's
+//Optionally, working with a CMS is something else I need to learn.
 
-};
+//02-06-2019
+//not feeling as confident in my css and html skills rn. I get the concepts but styling them is proving harder than I thought.
+//Purcahsed a CSS related book on amazon, will be reading up when it comes in
+ //checking out jquery finally
+ //its getting late
+ //wrote my first jquery today, just messing around right now.
+ //better CSS is coming, so hopefully I can make prettier things.
+ //jquery seems to make javascript easier to use
+
+//  $(function() {
+// 	 $('#main_content p').css({ color: 'red' });
+	
+// 	// on('click', function() {
+		
+// 	// })
+//  });
+
+//};
 	function contactButton() {
 		alert("c016yinbox@gmail.com");
 	};

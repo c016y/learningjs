@@ -1,18 +1,31 @@
-div#frontbox {
-    height: 0px;
-    width: 0px;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    border-left: 100px solid greenyellow;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+.top_column {
+    background-color: orange;
+    display: flex;
+}
+
+#main_content {
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    background-color: teal;
+    font-size: 80pt;
+    color: white;
+    flex: 3;
+}
+
+#main_content p {
     margin: auto;
 }
 
-div#backbox {
-    position: relative;
-    height: 500px;
-    width: 500px;
-    border: 0px;
-    background-color: violet;
+#recom {
+    display: flex;
+    height: 1000px;
+    background-color: brown;
+    flex: 1;
+}
+
+#recom button {
+    margin: auto;
+    height: 50px;
+    width: 50px;
 }

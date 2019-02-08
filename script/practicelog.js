@@ -304,6 +304,13 @@ if (pushupAmount < 10) {
  //better CSS is coming, so hopefully I can make prettier things.
  //jquery seems to make javascript easier to use
 
+ //02/07/2019
+ //Was feeling a little burned out from code today, took a break to focus on some design things. I downloaded Adobe Xd and started
+ //working on some graphics and whathave you. First thing I learned is that there needs to be tons of whitespace because when
+ //your web elements are to big it makes the webpage look kinda clunky, will need to improve that at some point.
+ //I want to actually launch a website sooner than later so i nned to focus on making a personal / portfolio site
+ //I may add some sort of blog to replace the this log I've been updating inside this .js file.
+
 //  $(function() {
 // 	 $('#main_content p').css({ color: 'red' });
 	

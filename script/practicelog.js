@@ -315,9 +315,15 @@ if (pushupAmount < 10) {
 // 	 $('#main_content p').css({ color: 'red' });
 	
 // 	// on('click', function() {
-		
+
 // 	// })
 //  });
+
+//02-08-2019
+//Lots more design work bein done. Adobe Xd is super cool, building out sites is super fun, hopefully building them in HTML and CSS
+//will be equally as fun. I want to get into PHP / SQL so I can make some sort of CMS... Idk if using an already made one would be
+//a better aproach. I'll probably figure out how to make it anyways. Also need to look more into JQuery, and JSON / AJAX so I can work
+//with internet things and stuff that other people have built
 
 //};
 	function contactButton() {

@@ -323,7 +323,13 @@ if (pushupAmount < 10) {
 //Lots more design work bein done. Adobe Xd is super cool, building out sites is super fun, hopefully building them in HTML and CSS
 //will be equally as fun. I want to get into PHP / SQL so I can make some sort of CMS... Idk if using an already made one would be
 //a better aproach. I'll probably figure out how to make it anyways. Also need to look more into JQuery, and JSON / AJAX so I can work
-//with internet things and stuff that other people have built
+//with internet things and stuff that other people have built 
+
+//02-10-2019
+//started work on portfolio yesterday
+//Once I finish the homepage I will start work on some sort of blog so I don;t have to use this file to log my thoughts on learning web development
+//I've filled almost all of the html and css for the homepage, I spent most of today making it responsive, though there is still work
+//to be done for the hamburger menu.
 
 //};
 	function contactButton() {

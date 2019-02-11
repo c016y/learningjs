@@ -33,10 +33,10 @@
 
         $(function(One) {
             $("#btn_1").on('click', function() {
-                $("#btn_1").slideUp(500);
+                $("#btn_1").slideUp(2ZZ00);
             })
             $("#btn_1").on('click', function() {
-                $("#btn_1").slideDown(500);
+                $("#btn_1").slideDown(200);
             });
 
             $("#btn_2").on('click', function() {

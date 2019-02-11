@@ -8,7 +8,7 @@
 <body>
 <!-- Info/Home -->
 	<div id="basicInfo">
-		<header>a
+		<header>
 			<h3> My name is <b> Colby</b> and I'm trying to get a <b>dev job</b> </h3>
 			<h4> This is my website to show you what I know </h4>
 		</header>

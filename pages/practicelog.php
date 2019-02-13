@@ -6,46 +6,13 @@
     <title>Practice Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/website/styles/practicelog.css" />
-    <script src="/website/script/practicelog.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head> 
 <body>
-    <div class="top_column">
-        <div id="main_content">
-            <p>YO</p>
-        </div>
-        <div id="recom">
-            <button id="btn_1">1</button>
-            <button id="btn_2">2</button>
-            <button id="btn_3">3</button>
-        </div>
+    <div id="box">
+        {{ message }}
     </div>
-
-    <script>
-        $(function(YO) {
-            $('#main_content p').on('mouseover', function() {
-                $('#main_content p').css({color:'red'});
-            });
-            $('#main_content p').on('click', function() {
-                $('#main_content p').css({color:'white'});
-            });
-        });
-
-        $(function(One) {
-            $("#btn_1").on('click', function() {
-                $("#btn_1").slideUp(2ZZ00);
-            })
-            $("#btn_1").on('click', function() {
-                $("#btn_1").slideDown(200);
-            });
-
-            $("#btn_2").on('click', function() {
-                $("#btn_2").slideDown(500);
-            });
-            $("#btn_2").on('click', function() {
-                $("#btn_2").slideUp(500);
-            });
-        })
-    </script>
+    <script src="/website/script/practicelog.js"></script>
 </body>
 </html>
